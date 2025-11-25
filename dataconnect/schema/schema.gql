@@ -1,0 +1,23 @@
+type User @table {
+  displayName: String!
+  createdAt: Timestamp!
+  email: String
+  photoUrl: String
+}
+
+type Project @table {
+  name: String!
+  createdAt: Timestamp!
+  description: String
+  dueDate: Date
+  user: User
+}
+
+type Task @table {
+  title: String!
+  isComplete: Boolean!
+  createdAt: Timestamp!
+  description: String
+  dueDate: Date
+  project: Project
+}
