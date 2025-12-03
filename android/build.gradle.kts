@@ -1,3 +1,16 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Flutter plugin
+        classpath("dev.flutter:flutter-gradle-plugin:1.0.0")
+
+        // Google services plugin (pour Firebase)
+        classpath("com.google.gms:google-services:4.3.15")
+    }
+}
 allprojects {
     repositories {
         google()
