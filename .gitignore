@@ -25,5 +25,21 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
-lib/custom_textfield.dart
-/lib
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive files
+google-services.json
+firebase_options.dart
+
+# build/
+# build/ should be in gitignore (handled above)
